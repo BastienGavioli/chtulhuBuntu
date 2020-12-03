@@ -1,7 +1,7 @@
 <?php
-session_start();
+//session_start();
 
-require_once File::build_path(array('model', 'Model.php'));
+require File::build_path(array('controller', 'ControllerDechet.php'));
 
 if (isset($_GET['controller'])){
     $controller = "Controller" . ucfirst($_GET['controller']);
@@ -16,5 +16,5 @@ else{
     $action = "readAll";
 }
 
-
 $controller::$action();
+

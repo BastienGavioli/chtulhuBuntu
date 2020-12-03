@@ -5,20 +5,20 @@ class ControllerDechet
 {
     public static function readAll() {
         $tab = ModelDechet::selectAll();
-        $controller = "dechets";
+        $controller = "dechet";
         $view='list';
         $pagetitle='Liste des déchets';
         require File::build_path(array("view","view.php"));
     }
 
     public static function read(){
-        $p = ModelDechet::selectByPrimary($_GET['id']);
+        $v = ModelDechet::selectByPrimary($_GET['id']);
 
-        if ($p == false){
+        if ($v == false){
             error();
         }
         else{
-            $controller = "Dechet";
+            $controller = "dechet";
             $view='detail';
             $pagetitle='Détails du Dechet';
             require File::build_path(array("view","view.php"));
@@ -26,15 +26,17 @@ class ControllerDechet
     }
 
     public static function error(){
+        $controller = "dechet";
         $view='error';
         $pagetitle='Erreur de Dechet';
         require File::build_path(array("view","view.php"));
     }
 
-    public static function delete($id){
-        ModelDechet::delete($id);
+    public static function delete(){
+        ModelDechet::delete($_GET['id']);
 
         $tab = ModelDechet::selectAll();
+        $controller = "dechet";
         $view='deleted';
         $pagetitle='Dechet supprimée';
         require File::build_path(array("view","view.php"));
@@ -49,6 +51,7 @@ class ControllerDechet
         $readonly_required="required";
         $updated_created = "created";
         $view='update';
+        $controller = "dechet";
         $pagetitle='Ajouter un utilisateur';
         require File::build_path(array("view","view.php"));
     }
@@ -64,20 +67,22 @@ class ControllerDechet
         else{
             $tab = ModelDechet::selectAll();
             $view='created';
+            $controller = "dechet";
             $pagetitle='Dechet enregistrée';
             require File::build_path(array("view","view.php"));
         }
     }
 
 
-    public static function update($idDechet){
-        $v = ModelDechet::select($idDechet);
+    public static function update(){
+        $v = ModelDechet::selectByPrimary($_GET['id']);
         $position = $v->getPosition();
         $type = $v->getType();
         $quantite = $v->getQuantite();
         $readonly_required="readonly";
         $updated_created = "updated";
 
+        $controller = "dechet";
         $view='update';
         $pagetitle='Editer un Dechet';
         require File::build_path(array("view","view.php"));
@@ -94,6 +99,7 @@ class ControllerDechet
         else{
             $tab = ModelDechet::selectAll();
             $view='created';
+            $controller = "dechet";
             $pagetitle='Dechet enregistrée';
             require File::build_path(array("view","view.php"));
         }

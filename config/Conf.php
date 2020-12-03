@@ -5,8 +5,14 @@ class Conf {
         'hostname' => 'localhost',
         'database' => 'chtulhUbuntu',
         'login' => 'pi',
-        'password' => 'root!'
+        'password' => 'root'
     );
+
+    static private $debug = True;
+
+    static public function getDebug() {
+        return self::$debug;
+    }
 
     static public function getLogin() {
 
