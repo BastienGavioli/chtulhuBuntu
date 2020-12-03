@@ -11,7 +11,33 @@
 <header>
 
     <div id="divLogo">
-        <img alt="Logo" id="logo" src="../assets/icon.png">
+        <img alt="Logo" src="../assets/icons/jour.png" id="logo">
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <script type="text/javascript">
+            var logo = document.getElementById('logo');
+            var now = new Date();
+            var hour = now.getHours();
+            console.log(hour);
+            printTime(hour);
+
+            function printTime(hour){
+                if(hour>=0 && hour<=6 || hour>=20 && hour<=23) {
+                    logo.src = "../assets/icons/nuit.png";
+                }
+                else if(hour>=6 && hour<=16){
+                    logo.src = "../assets/icons/jour.png";
+                }
+                else if(hour>=16 && hour<=20){
+                        logo.src = "../assets/icons/crepuscule.png";
+                }
+            }
+        </script>
+
+        </body>
+        </html>
+
     </div>
 
     <nav>
