@@ -58,6 +58,40 @@ div {
     font-family: "CRYSISB", "Lucida Sans Unicode", "Arial", "sans-serif";
 }
 
+.presentation {
+    display: flex;
+    flex-direction: column;
+}
+.yann{
+    background-color: green;
+}
+.nico{
+    background-color: cyan;
+}
+.gati{
+    background-color: teal;
+}
+.remi {
+    background-color: blue;
+}
+.mela {
+    background-color: pink;
+}
+.bast {
+    background-color: yellow;
+}
+.alex {
+    background-color: orange;
+}
+.enzo {
+    background-color: red;
+}
+
+.team {
+display: inline-block;
+}
+
+
 h3 {
     border: 1px solid #266659;
     border-radius: 10px;
