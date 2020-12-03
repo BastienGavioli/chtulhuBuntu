@@ -21,6 +21,7 @@
 <body>
 <div><p>Le premier déchet découvert par un surfeur date du 1 Mai 1776
     <a href="https://www.nationilluminati.com/">Notre partenaire principal</a>
+    <img href="image/georgewashingtondesaprouve.png">
 </p></div>
 <?php
 require File::build_path(array("view", static::$controller, "$view.php"));;
