@@ -15,7 +15,6 @@ main {
     flex-direction: column;
     width: fit-content;
     padding: min(5vh,40px) 7vw;
-    background-color: rgba(131, 90, 119, 0.5);
 }
 
 main > article {
