@@ -1,0 +1,55 @@
+body {
+}
+
+main {
+    background-color: rgba(131, 90, 119, 0.5);
+}
+
+nav {
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    background-color: rgba(51, 94, 179, 0.5);
+    font-size: 180%;
+}
+
+div {
+    display: flex;
+    position: relative;
+    padding-left: 4px;
+    align-items: center;
+    flex-grow: 1;
+    font-family: "BigShouldersStencilText", "Lucida Sans Unicode", "Arial", "sans-serif";
+}
+
+h3 {
+    border: 1px solid #266659;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "BigShouldersStencilText", "Lucida Sans Unicode", "Arial", "sans-serif";
+    border: 4px solid rgb(22, 53, 62);
+    border-radius: 25px;
+}
+
+p {
+    margin: 0 30px;
+    font-family: "Teko", courier, monospace;
+    font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(50, 125, 95, 0.75);
+}
+
+a:visited {
+    color: #002645;
+}
+
+a:hover {
+    color: #468a40;
+}
