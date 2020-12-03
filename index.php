@@ -1,7 +1,10 @@
 <?php
 
-
 $ROOT_FOLDER = __DIR__ . DIRECTORY_SEPARATOR;
-require_once $ROOT_FOLDER . 'lib' . DIRECTORY_SEPARATOR . 'File.php';
+require $ROOT_FOLDER . 'lib' . DIRECTORY_SEPARATOR . 'File.php';
 
-require_once File::build_path(array('controller', 'routeur.php'));
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+require File::build_path(array('controller', 'routeur.php'));
+
