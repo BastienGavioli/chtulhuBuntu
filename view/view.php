@@ -12,6 +12,7 @@
     <meta name="robots" content="noindex,nofollow">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="shortcut icon" type="image/ico" href="/assets/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="/CSS/general.css">
     <meta name="HandheldFriendly" content="true">
 
 </head>
