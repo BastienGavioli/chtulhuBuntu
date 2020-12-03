@@ -15,8 +15,12 @@ main {
     display: flex;
     flex-direction: column;
     width: fit-content;
+<<<<<<< HEAD
+    padding: min(5vh,40px) 7vw;
+=======
     padding: min(5vh, 40px) 7vw;
     background-color: rgba(35, 155, 136, 0.75);
+>>>>>>> b5616ed92165b128ab500af593b3315cf20218ef
 }
 
 header {
