@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<?php File::build_path(array("assets", "[images/georgewashingtondesaprouve.png]")); ?>
 <?php
 require File::build_path(array("view", $controller, "$view.php"));;
 ?>
