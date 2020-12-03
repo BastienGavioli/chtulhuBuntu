@@ -86,7 +86,7 @@ a:visited {
     color: #002645;
 }
 
-a:hover {
+ag:hover {
     color: #468a40;
 }
 
@@ -96,6 +96,10 @@ a:hover {
     padding: 10px 0;
     max-height: 10vh;
     min-height: 40px;
+}
+
+#gwapprove {
+    width: 50%;
 }
 
 header > #divLogo {
