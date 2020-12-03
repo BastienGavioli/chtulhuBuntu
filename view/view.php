@@ -12,7 +12,7 @@
     <meta name="robots" content="noindex,nofollow">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="shortcut icon" type="image/ico" href="uri" />
-    <link rel="index" title="/index.html" href="uri" />
+
  
     <meta name="HandheldFriendly" content="true">
 
@@ -21,7 +21,7 @@
 <body>
 
 <?php
-require File::build_path(array("view", static::$controller, "$view.php"));;
+require File::build_path(array("view", $controller, "$view.php"));;
 ?>
 
 <footer>
