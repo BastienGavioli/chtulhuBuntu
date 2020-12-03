@@ -48,7 +48,7 @@ div {
     padding-left: 4px;
     align-items: center;
     flex-grow: 1;
-    font-family: "BigShouldersStencilText", "Lucida Sans Unicode", "Arial", "sans-serif";
+    font-family: "CRYSISB", "Lucida Sans Unicode", "Arial", "sans-serif";
 }
 
 h3 {
@@ -66,7 +66,7 @@ h2 {
 
 p {
     margin: 0 30px;
-    font-family: "Teko", courier, monospace;
+    font-family: "CRYSISB", courier, monospace;
     font-size: 150%;
 }
 
@@ -84,6 +84,11 @@ a:hover {
 }
 
 @font-face {
-    font-family: Teko;
+    font-family: Alexana;
     src: url(../assets/fonts/Alexana.ttf);
+}
+
+@font-face {
+    font-family: CRYSISB;
+    src: url(../assets/fonts/CRYSISB.ttf);
 }
