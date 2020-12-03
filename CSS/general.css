@@ -16,6 +16,7 @@ main {
     width: fit-content;
     padding: min(5vh,40px) 7vw;
     background-color: rgba(131, 90, 119, 0.5);
+    margin-top:50px;
 }
 
 main > article {
@@ -31,13 +32,14 @@ header {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     max-height: 10vh;
     min-height: 40px;
     height: auto;
     padding: 5px 0;
+    background-color: #8c969b;
 }
 
 nav {
