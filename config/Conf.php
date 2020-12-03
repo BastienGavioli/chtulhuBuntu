@@ -2,7 +2,7 @@
 class Conf {
 
     static private $databases = array(
-        'hostname' => 'localhost',
+        'hostname' => '176.142.249.77',
         'database' => 'chtulhUbuntu',
         'login' => 'pi',
         'password' => 'root'
