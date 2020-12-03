@@ -59,7 +59,7 @@ h3 {
 
 h2 {
     text-align: center;
-    font-family: "BigShouldersStencilText", "Lucida Sans Unicode", "Arial", "sans-serif";
+    font-family: "Alexana", "Arial", "sans-serif";
     border: 4px solid rgb(22, 53, 62);
     border-radius: 25px;
 }
@@ -81,4 +81,9 @@ a:visited {
 
 a:hover {
     color: #468a40;
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(../assets/fonts/Alexana.ttf);
 }
