@@ -1,12 +1,12 @@
-body{
+body main{
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 71);
     font-size: 200%;
 }
 
-div{
+main div{
     align-items: center;
+    width: 100%;
 }
 div.gauche{
     display: flex;
@@ -15,13 +15,15 @@ div.gauche{
     background-color: rgb(0, 0, 71);
 }
 
+fieldset{
+    background-color: rgb(1, 1, 151);
+}
 
 div.droite{
     display: flex;
     flex-direction: row-reverse;
     color: white;
     background-color: rgb(1, 1, 151);
-
 }
 
 div p{

@@ -1,4 +1,3 @@
-<html>
 
 <p id="demo1"></p>
 <p id="demo2"></p>
@@ -8,6 +7,7 @@
     window.onload = getLocation();
     var y = document.getElementById("demo1");
     var x = document.getElementById("demo2");
+
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(getMeteo);
@@ -30,5 +30,3 @@
     }
 
 </script>
-
-</html>
