@@ -12,6 +12,7 @@ class ModelDechet extends Model
     private $position;
     private $type;
     private $quantite;
+    private $visuel;
 
     public function getId()
     {
@@ -33,9 +34,14 @@ class ModelDechet extends Model
         return $this->quantite;
     }
 
+    public function getVisuel()
+    {
+        return $this->visuel;
+    }
+
     public function getData()
     {
-        return array('id' => $this->id, 'position' => $this->position, 'type' => $this->type, 'quantite' => $this->quantite);
+        return array('id' => $this->id, 'position' => $this->position, 'type' => $this->type, 'quantite' => $this->quantite, 'visuel' =>$this->visuel);
     }
 
 }
