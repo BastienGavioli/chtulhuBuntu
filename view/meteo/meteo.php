@@ -1,6 +1,6 @@
 <html>
 
-<p id="demo1"></p><img alt="temp" src="../../assets/temperature/cold.png id='itemp'"/>
+<p id="demo1"></p><img alt="temp" src="../../assets/temperature/cold.png" id='itemp'"/>
 <p id="demo2"></p>
 
 <script>
