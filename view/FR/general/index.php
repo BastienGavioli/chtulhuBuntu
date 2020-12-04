@@ -14,6 +14,10 @@
             <a href="https://www.nationilluminati.com/">Notre partenaire principal</a>
         </p></div>
     <div>
-        <img src="/assets/crewmates/red.png" alt="red" id="red" class="au" onclick="document.getElementById('red').src='/assets/crewmates/red-dead.png'">
+        <p> Les chiffres de 2018 sont déjà très alarmant, comme en témoigne ce graphique !</p>
+        <img src="/assets/diagram.png" alt="diagram"/>
+    </div>
+    <div>
+        <img src="/assets/crewmates/yellow.png" class="au" alt="yellow" id="yellow" class="yellow" onclick="document.getElementById('yellow').src='/assets/crewmates/yellow-dead.png'">
     </div>
 </main>

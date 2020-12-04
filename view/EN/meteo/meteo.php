@@ -1,14 +1,16 @@
 <main>
 
-<p id="demo1"></p><img alt="temp" src="/assets/temperature/medium.png" style="width: 100px;" id='itemp'>
-<p id="demo2"></p>
+<p id="tempImage"></p><img alt="temp" src="/assets/temperature/medium.png" style="width: 100px;" id='itemp'>
+<p id="temp"></p>
+    <p id="wind"></p>
 <img src="/assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='/assets/crewmates/brown-dead.png'" style="width: 50px;">
 
     <script>
 
     window.onload = getLocation();
-    var y = document.getElementById("demo1");
-    var x = document.getElementById("demo2");
+    var y = document.getElementById("tempImage");
+    var x = document.getElementById("temp");
+    var x = document.getElementById("wind");
     var itemp = document.getElementById('itemp');
     function getLocation() {
         if (navigator.geolocation) {
@@ -17,10 +19,6 @@
             x.innerHTML = "Geolocation is not available on this machine.";
         }
     }
-
-
-
-
 
     function getMeteo(position){
         var requestURL = "https://www.prevision-meteo.ch/services/json/lat="+position.coords.latitude+"lng="+position.coords.longitude ;
@@ -42,6 +40,7 @@
             else if(temp>=27 && temp<200){
                 itemp.src = "/assets/temperature/hot.png";
             }
+            z.innerHTML = "There is currently a wind " + meteo.current_condition.wnd_dir + " going up to " + meteo.current_condition.wnd_spd + "km/h with blowings up to " + meteo.current_condition.wnd_gust + "km/h.";
         }
     }
 

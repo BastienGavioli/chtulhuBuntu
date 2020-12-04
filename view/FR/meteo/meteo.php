@@ -1,14 +1,16 @@
 <main>
 
-<p id="demo1"></p><img alt="temp" src="../../../assets/temperature/medium.png" style="width: 100px;" id='itemp'>
-<p id="demo2"></p>
-<img src="../../../assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='../../assets/crewmates/brown-dead.png'" style="width: 50px;">
+<p id="tempImage"></p><img alt="temp" src="assets/temperature/medium.png" style="width: 100px;" id='itemp'>
+<p id="temp"></p>
+    <p id="wind"></p>
+<img src="/assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='../../assets/crewmates/brown-dead.png'" style="width: 50px;">
 
     <script>
 
     window.onload = getLocation();
-    var y = document.getElementById("demo1");
-    var x = document.getElementById("demo2");
+    var y = document.getElementById("tempImage");
+    var x = document.getElementById("temp");
+    var z = document.getElementById("wind");
     var itemp = document.getElementById('itemp');
     function getLocation() {
         if (navigator.geolocation) {
@@ -34,14 +36,15 @@
             temp = meteo.current_condition.tmp;
             y.innerHTML = "Température actuelle:" + temp +"°C";
             if(temp>=-273 && temp<22) {
-                itemp.src = "../../assets/temperature/cold.png";
+                itemp.src = "/assets/temperature/cold.png";
             }
             else if(temp>=22 && temp<27){
-                itemp.src = "../../assets/temperature/medium.png";
+                itemp.src = "/assets/temperature/medium.png";
             }
             else if(temp>=27 && temp<200){
-                itemp.src = "../../assets/temperature/hot.png";
+                itemp.src = "/assets/temperature/hot.png";
             }
+            z.innerHTML = "Il y a actuellement un vent " + meteo.current_condition.wnd_dir + " allant à une vitesse moyenne de " + meteo.current_condition.wnd_spd + "km/h et avec des rafales allant jusqu'à " + meteo.current_condition.wnd_gust + "km/h.";
         }
     }
 

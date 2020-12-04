@@ -4,13 +4,13 @@ class ControllerGeneral
 {
 
 
-public static function readAll() {
-    if(isset($_GET['lang'])){
-        $lang=$_GET['lang'];
-    }
-    else{
-        $lang='FR';
-    }
+    public static function readAll() {
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $controller = "general";
         $view='index';
         $pagetitle='Index';

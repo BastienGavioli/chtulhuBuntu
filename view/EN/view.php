@@ -48,7 +48,7 @@
     </div>
         <nav>
     <ul id="menu">
-        <li><a href="index.php">Index</a></li>
+        <li><a href="index.php?lang=EN">Index</a></li>
         <li><a href="index.php?controller=meteo&action=read&lang=EN">Meteo</a></li>
         <li><a href="index.php?controller=dechet&action=choixDechet&lang=EN">Add a trash</a></li>
         <li><a href="index.php?controller=general&action=apropos&lang=EN">About us</a></li>
@@ -58,7 +58,7 @@
 <div id="burger">
     <img alt="burger" id="imgBurger" src="../../assets/burger.png">
     <ul id="menuBurger">
-        <li><a href="index.php">Index</a></li>
+        <li><a href="index.php?lang=EN">Index</a></li>
         <li><a href="index.php?controller=meteo&action=read&lang=EN">Meteo</a></li>
         <li><a href="index.php?controller=dechet&action=choixDechet&lang=EN">Add a trash</a></li>
         <li><a href="index.php?controller=general&action=apropos&lang=EN">About us</a></li>

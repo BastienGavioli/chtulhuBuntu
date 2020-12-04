@@ -16,8 +16,14 @@ class ControllerDechet
         $pagetitle='Liste des déchets';
         require File::build_path(array("view",$lang,"view.php"));
     }
-    /*
+
     public static function read(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $v = ModelDechet::selectByPrimary($_GET['id']);
 
         if ($v == false){
@@ -30,8 +36,14 @@ class ControllerDechet
             require File::build_path(array("view",$lang,"view.php"));
         }
     }
-    */
+
     public static function error(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $controller = "dechet";
         $view='error';
         $pagetitle='Erreur de Dechet';
@@ -39,26 +51,18 @@ class ControllerDechet
     }
 
     public static function delete(){
-        ModelDechet::delete($_GET['id']);
-
-        $tab = ModelDechet::selectAll();
-        $controller = "dechet";
-        $view='deleted';
-        $pagetitle='Dechet supprimée';
-        require File::build_path(array("view",$lang,"view.php"));
-    }
-
-    public static function choixDechet(){
         if(isset($_GET['lang'])){
             $lang=$_GET['lang'];
         }
         else{
             $lang='FR';
         }
-        $customcss = "dechet";
-        $view='choixDechet';
+        ModelDechet::delete($_GET['id']);
+
+        $tab = ModelDechet::selectAll();
         $controller = "dechet";
-        $pagetitle='Choisir un déchet';
+        $view='deleted';
+        $pagetitle='Dechet supprimée';
         require File::build_path(array("view",$lang,"view.php"));
     }
 
@@ -70,17 +74,26 @@ class ControllerDechet
         else{
             $lang='FR';
         }
+        $idDechet="";
+        $position="";
+        $type="";
+        $quantite="";
         $readonly_required="required";
         $updated_created = "created";
-        $customcss = "dechet";
         $view='update';
         $controller = "dechet";
-        $pagetitle='Ajouter un déchet';
+        $pagetitle='Ajouter un utilisateur';
         require File::build_path(array("view",$lang,"view.php"));
     }
 
     public static function created(){
-        $Dechet1 = new ModelDechet(null, $_GET["position"], $_GET["type"],$_GET["quantite"], $_GET["visuel"]);
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
+        $Dechet1 = new ModelDechet( $_GET["position"], $_GET["type"],$_GET["quantite"], null);
 
         var_dump($Dechet1);
 
@@ -90,21 +103,16 @@ class ControllerDechet
             echo htmlspecialchars("Un Dechet avec ce idDechet existe déjà dans la base de donnée.");
         }
         else{
-            $view='update';
+            $tab = ModelDechet::selectAll();
+            $view='created';
             $controller = "dechet";
-            $pagetitle='Dechet enregistrée !';
+            $pagetitle='Dechet enregistrée';
             require File::build_path(array("view",$lang,"view.php"));
         }
     }
 
 
     public static function update(){
-        if(isset($_GET['lang'])){
-            $lang=$_GET['lang'];
-        }
-        else{
-            $lang='FR';
-        }
         $v = ModelDechet::selectByPrimary($_GET['id']);
         $position = $v->getPosition();
         $type = $v->getType();
@@ -119,12 +127,6 @@ class ControllerDechet
     }
 
     public static function updated(){
-        if(isset($_GET['lang'])){
-            $lang=$_GET['lang'];
-        }
-        else{
-            $lang='FR';
-        }
         $Dechet1 = new ModelDechet( $_GET["position"], $_GET["type"],$_GET["quantite"], null);
 
         $a = $Dechet1->edit();
@@ -140,5 +142,19 @@ class ControllerDechet
             require File::build_path(array("view",$lang,"view.php"));
         }
 
+    }
+
+    public static function choixDechet(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
+        $customcss = "dechet";
+        $view='choixDechet';
+        $controller = "dechet";
+        $pagetitle='Choisir un déchet';
+        require File::build_path(array("view",$lang,"view.php"));
     }
 }

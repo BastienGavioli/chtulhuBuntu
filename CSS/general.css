@@ -17,7 +17,7 @@ main {
     width: fit-content;
     padding: min(5vh,40px) 7vw;
     margin-top:50px;
-    background-color: #d0d0d050;
+    background-color: #d0d0d080;
 }
 
 main > article {

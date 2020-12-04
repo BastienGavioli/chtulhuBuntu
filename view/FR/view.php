@@ -23,7 +23,7 @@
 <body>
 <header>
     <div id="divLogo">
-        <img alt="Logo" src="../../assets/icons/jour.png" id="logo">
+        <img alt="Logo" src="/assets/icons/jour.png" id="logo">
         <!DOCTYPE html>
         <html>
         <body>
@@ -48,26 +48,26 @@
     </div>
         <nav>
     <ul id="menu">
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?controller=meteo&action=read">Météo près de vous</a></li>
-        <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
-        <li><a href="index.php?controller=general&action=apropos">A propos de nous</a></li>
+        <li><a href="index.php?lang=FR">Accueil</a></li>
+        <li><a href="index.php?controller=meteo&action=read&lang=FR">Météo près de vous</a></li>
+        <li><a href="index.php?controller=dechet&action=choixDechet&lang=FR">Ajouter un déchet</a></li>
+        <li><a href="index.php?controller=general&action=apropos&lang=FR">A propos de nous</a></li>
     </ul>
 </nav>
 
 <div id="burger">
-    <img alt="burger" id="imgBurger" src="../../assets/burger.png">
+    <img alt="burger" id="imgBurger" src="/assets/burger.png">
     <ul id="menuBurger">
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?controller=meteo&action=read">Météo près de vous</a></li>
-        <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
-        <li><a href="index.php?controller=general&action=apropos">A propos de nous</a></li>
+        <li><a href="index.php?lang=FR">Accueil</a></li>
+        <li><a href="index.php?controller=meteo&action=read&lang=FR">Météo près de vous</a></li>
+        <li><a href="index.php?controller=dechet&action=choixDechet&lang=FR">Ajouter un déchet</a></li>
+        <li><a href="index.php?controller=general&action=apropos&lang=FR">A propos de nous</a></li>
     </ul>
 </div>
 </header>
 
 <?php
-require File::build_path(array("view", $controller, "$view.php"));;
+require File::build_path(array("view",$lang, $controller,  "$view.php"));;
 ?>
 
 <footer>
