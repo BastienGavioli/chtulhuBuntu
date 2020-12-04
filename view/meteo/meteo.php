@@ -1,6 +1,6 @@
 <html>
 
-<p id="demo1"></p><img alt="temp" src="../assets/temperature/cold.png id='itemp'"/>
+<p id="demo1"></p><img alt="temp" src="../../assets/temperature/cold.png id='itemp'"/>
 <p id="demo2"></p>
 
 <script>
@@ -29,10 +29,10 @@
             temp = meteo.current_condition.tmp;
             y.innerHTML = "Température actuelle:" + temp +"°C";
             if(temp>=-273 && temp<25) {
-                itemp.src = "../assets/temperature/cold.png";
+                itemp.src = "../../assets/temperature/cold.png";
             }
             else if(temp>=25 && temp<200){
-                itemp.src = "../assets/temperature/hot.png";
+                itemp.src = "../../assets/temperature/hot.png";
             }
         }
     }
