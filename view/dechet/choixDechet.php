@@ -1,5 +1,4 @@
-<?php
-echo ' <main>
+<main>
         <div class="gauche">
             <p>
                 Les sacs plastiques, les tissus isolants, tout ce qui fait des fines plaques de plastique.
@@ -36,5 +35,7 @@ echo ' <main>
             </p>
             <a href="index.php?controller=dechet&action=create&type=masque"><img src="https://cdn.discordapp.com/attachments/784098613282209813/784173073888575588/MJ.jpg" alt="Masque Jackson" width="300px"></a><!--Image de masques-->
         </div>
-        </main>
-';
+        </div>
+			<img src="/assets/crewmates/pink.png" alt="pink" id="pink" class="au" onclick="document.getElementById('pink').src='../assets/crewmates/pink-dead.png'">
+		<div>
+</main>

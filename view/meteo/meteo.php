@@ -1,8 +1,8 @@
 <html lang="fr">
 
-<p id="demo1"></p><img alt="temp" src="../../assets/temperature/medium.png" style="width: 100px;" id='itemp'"/>
+<p id="demo1"></p><img alt="temp" src="/assets/temperature/medium.png" style="width: 100px;" id='itemp'"/>
 <p id="demo2"></p>
-<img src="../../assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='../../assets/crewmates/brown-dead.png'">
+<img src="/assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='/assets/crewmates/brown-dead.png'">
 <script>
 
     window.onload = getLocation();
@@ -29,13 +29,13 @@
             temp = meteo.current_condition.tmp;
             y.innerHTML = "Température actuelle:" + temp +"°C";
             if(temp>=-273 && temp<22) {
-                itemp.src = "../../assets/temperature/cold.png";
+                itemp.src = "/assets/temperature/cold.png";
             }
             else if(temp>=22 && temp<27){
-                itemp.src = "../../assets/temperature/medium.png";
+                itemp.src = "/assets/temperature/medium.png";
             }
             else if(temp>=27 && temp<200){
-                itemp.src = "../../assets/temperature/hot.png";
+                itemp.src = "/assets/temperature/hot.png";
             }
         }
     }

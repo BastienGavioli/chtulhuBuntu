@@ -25,4 +25,5 @@
         <div class="team"><h3>Notre merveilleuse équipe est soudée même en distanciel ! </h3>
             <br><br><img src="/assets/team.png" alt="team" width="300px"/></div>
     </div>
+    <img src="../assets/team.png" alt="team" width="300px"/><img src="../assets/crewmates/orange.png" alt="orange" id="orange" class="au" onclick="document.getElementById('orange').src='../assets/crewmates/orange-dead.png'">
 </main>
