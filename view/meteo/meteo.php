@@ -1,6 +1,6 @@
-<html>
+<html lang="fr">
 
-<p id="demo1"></p>
+<p id="demo1"></p><img alt="temp" src="../../assets/temperature/medium.png" id='itemp'"/>
 <p id="demo2"></p>
 
 <script>
@@ -8,6 +8,7 @@
     window.onload = getLocation();
     var y = document.getElementById("demo1");
     var x = document.getElementById("demo2");
+    var itemp = document.getElementById('itemp');
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(getMeteo);
@@ -25,10 +26,23 @@
         request.onload = function (){
             var meteo = request.response;
             x.innerHTML = "Position : latitude= " + position.coords.latitude +"<br/> longitude=  " + position.coords.latitude;
-            y.innerHTML = "Température actuelle:" + meteo.current_condition.tmp +"°C";
+            temp = meteo.current_condition.tmp;
+            y.innerHTML = "Température actuelle:" + temp +"°C";
+            if(temp>=-273 && temp<22) {
+                itemp.src = "../../assets/temperature/cold.png";
+            }
+            else if(temp>=22 && temp<27){
+                itemp.src = "../../assets/temperature/medium.png";
+            }
+            else if(temp>=27 && temp<200){
+                itemp.src = "../../assets/temperature/hot.png";
+            }
         }
     }
 
+    function tempLogo(){
+
+    }
 </script>
 
 </html>
