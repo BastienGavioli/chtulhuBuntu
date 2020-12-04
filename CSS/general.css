@@ -58,6 +58,40 @@ div {
     font-family: "CRYSISB", "Lucida Sans Unicode", "Arial", "sans-serif";
 }
 
+.presentation {
+    display: flex;
+    flex-direction: column;
+}
+.yann{
+    background-color: #678900;
+}
+.nico{
+    background-color: cyan;
+}
+.gati{
+    background-color: #1ABC9C;
+}
+.remi {
+    background-color: #1e90ff;
+}
+.mela {
+    background-color: #ff69b4;
+}
+.bast {
+    background-color: #F1C40F;
+}
+.alex {
+    background-color: #E67E22 ;
+}
+.enzo {
+    background-color: #a20000;
+}
+
+.team {
+display: inline-block;
+}
+
+
 h3 {
     border: 1px solid #266659;
     border-radius: 10px;
@@ -86,7 +120,7 @@ a:visited {
     color: #002645;
 }
 
-a:hover {
+ag:hover {
     color: #468a40;
 }
 
@@ -96,6 +130,10 @@ a:hover {
     padding: 10px 0;
     max-height: 10vh;
     min-height: 40px;
+}
+
+#gwapprove {
+    width: 50%;
 }
 
 header > #divLogo {
