@@ -41,3 +41,7 @@ div>input:focus{
 div>label{
     color: black;
 }
+
+input{
+    font-family: "CRYSISB", "Lucida Sans Unicode", "Arial", "sans-serif";
+}
