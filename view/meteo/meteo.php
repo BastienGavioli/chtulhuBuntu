@@ -28,7 +28,7 @@
             x.innerHTML = "Position : latitude= " + position.coords.latitude +"<br/> longitude=  " + position.coords.latitude;
             temp = meteo.current_condition.tmp;
             y.innerHTML = "Température actuelle:" + temp +"°C";
-            if(temp>=-273 && temp<20) {
+            if(temp>=-273 && temp<22) {
                 itemp.src = "../../assets/temperature/cold.png";
             }
             else if(temp>=22 && temp<27){
