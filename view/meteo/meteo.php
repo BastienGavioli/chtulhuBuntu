@@ -2,7 +2,7 @@
 
 <p id="demo1"></p><img alt="temp" src="../../assets/temperature/medium.png" style="width: 100px;" id='itemp'"/>
 <p id="demo2"></p>
-
+<img src="../../assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='../../assets/crewmates/brown-dead.png'">
 <script>
 
     window.onload = getLocation();
