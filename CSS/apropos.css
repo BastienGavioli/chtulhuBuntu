@@ -2,31 +2,46 @@
     display: flex;
     flex-direction: column;
 }
-.yann{
+
+.yann {
     background-color: #678900;
 }
-.nico{
+
+.nico {
     background-color: cyan;
 }
-.gati{
+
+.gati {
     background-color: #1ABC9C;
 }
+
 .remi {
     background-color: #1e90ff;
 }
+
 .mela {
     background-color: #ff69b4;
 }
+
 .bast {
     background-color: #F1C40F;
 }
+
 .alex {
-    background-color: #E67E22 ;
+    background-color: #E67E22;
 }
+
 .enzo {
     background-color: #a20000;
 }
 
 .team {
     display: inline-block;
+    position: relative;
+}
+
+.au {
+    position: absolute;
+    top: 260px;
+    left: 40px;
 }
