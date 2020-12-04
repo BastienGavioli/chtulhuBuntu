@@ -1,9 +1,10 @@
-<html lang="fr">
+<main>
 
 <p id="demo1"></p><img alt="temp" src="../../assets/temperature/medium.png" style="width: 100px;" id='itemp'>
 <p id="demo2"></p>
 <img src="../../assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='../../assets/crewmates/brown-dead.png'" style="width: 50px;">
-<script>
+
+    <script>
 
     window.onload = getLocation();
     var y = document.getElementById("demo1");
@@ -16,6 +17,10 @@
             x.innerHTML = "La géolocalisation n'est pas disponible sur cet appareil.";
         }
     }
+
+
+
+
 
     function getMeteo(position){
         var requestURL = "https://www.prevision-meteo.ch/services/json/lat="+position.coords.latitude+"lng="+position.coords.longitude ;
@@ -45,4 +50,4 @@
     }
 </script>
 
-</html>
+</main>

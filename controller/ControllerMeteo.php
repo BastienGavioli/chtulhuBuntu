@@ -2,7 +2,7 @@
 
 class ControllerMeteo
 {
-    public static function readAll(){
+    public static function read(){
         $view='meteo';
         $controller = "meteo";
         $pagetitle='La météo proche de vous !';

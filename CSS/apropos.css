@@ -11,7 +11,8 @@ main{
 
 .presentation div{
     width: 90%;
-    height: 45vh;
+    height: 125vh;
+    margin-bottom: 20px;
 }
 .yann{
     background-color: #678900;
