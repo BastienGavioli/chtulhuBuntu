@@ -63,28 +63,28 @@ div {
     flex-direction: column;
 }
 .yann{
-    background-color: green;
+    background-color: #678900;
 }
 .nico{
     background-color: cyan;
 }
 .gati{
-    background-color: teal;
+    background-color: #1ABC9C;
 }
 .remi {
-    background-color: blue;
+    background-color: #1e90ff;
 }
 .mela {
-    background-color: pink;
+    background-color: #ff69b4;
 }
 .bast {
-    background-color: yellow;
+    background-color: #F1C40F;
 }
 .alex {
-    background-color: orange;
+    background-color: #E67E22 ;
 }
 .enzo {
-    background-color: red;
+    background-color: #a20000;
 }
 
 .team {
