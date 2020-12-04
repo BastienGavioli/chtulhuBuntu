@@ -10,7 +10,7 @@ class ControllerDechet
         $pagetitle='Liste des déchets';
         require File::build_path(array("view","view.php"));
     }
-
+    /*
     public static function read(){
         $v = ModelDechet::selectByPrimary($_GET['id']);
 
@@ -24,7 +24,7 @@ class ControllerDechet
             require File::build_path(array("view","view.php"));
         }
     }
-
+    */
     public static function error(){
         $controller = "dechet";
         $view='error';
@@ -42,17 +42,25 @@ class ControllerDechet
         require File::build_path(array("view","view.php"));
     }
 
+    public static function choixDechet(){
+        $customcss = "dechet";
+        $view='choixDechet';
+        $controller = "dechet";
+        $pagetitle='Choisir un déchet';
+        require File::build_path(array("view","view.php"));
+    }
+
 
     public static function create(){
         $idDechet="";
         $position="";
-        $type="";
         $quantite="";
         $readonly_required="required";
         $updated_created = "created";
+        $customcss = "dechet";
         $view='update';
         $controller = "dechet";
-        $pagetitle='Ajouter un utilisateur';
+        $pagetitle='Ajouter un déchet';
         require File::build_path(array("view","view.php"));
     }
 

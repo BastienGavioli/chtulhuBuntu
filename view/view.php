@@ -13,53 +13,62 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="shortcut icon" type="image/ico" href="/assets/icon.png"/>
     <link rel="stylesheet" type="text/css" href="/CSS/general.css">
+    <?php if(isset($customcss)){
+        echo '<link rel="stylesheet" type="text/css" href="/CSS/'.$customcss.'.css">';
+    } ?>
     <meta name="HandheldFriendly" content="true">
 
 </head>
 
 <body>
 <header>
-
     <div id="divLogo">
-        <img alt="Logo" id="logo" src="/assets/icon.png">
-    </div>
+        <img alt="Logo" src="../assets/icons/jour.png" id="logo">
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <script type="text/javascript">
+            var logo = document.getElementById('logo');
+            var now = new Date();
+            var hour = now.getHours();
+            printTime(hour);
 
-    <nav>
-        <ul id="menu">
-            <li><a href="accueil.html">Accueil</a></li>
-            <li><a href="autrepage.html">autrepage(temp)</a></li>
-            <li><a href="possiblesousmenu.html">tempsousmenu</a>
-                <ul class="sousMenuNR">
-                    <li><a href="1.html">1</a></li>
-                    <li><a href="2.html">2</a></li>
-                    <li><a href="3.html">3</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="burger">
-        <img alt="burger" id="imgBurger" src="/assets/burger.png">
-        <ul id="menuBurger">
-            <li><a href="accueil.html">Accueil</a></li>
-            <li><a href="autrepage.html">autrepage(temp)</a></li>
-            <li><a href="possiblesousmenu.html">tempsousmenu</a>
-                <ul class="sousMenuNR">
-                    <li><a href="1.html">1</a></li>
-                    <li><a href="2.html">2</a></li>
-                    <li><a href="3.html">3</a></li>
-                </ul>
-            </li>
-        </ul>
+            function printTime(hour){
+                if(hour>=0 && hour<8 || hour>=20 && hour<=23) {
+                    logo.src = "../assets/icons/nuit.png";
+                }
+                else if(hour>=8 && hour<16){
+                    logo.src = "../assets/icons/jour.png";
+                }
+                else if(hour>=16 && hour<20){
+                    logo.src = "../assets/icons/crepuscule.png";
+                }
+            }
+        </script>
     </div>
+        <nav>
+    <ul id="menu">
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index.php?controller=meteo">Météo près de vous</a></li>
+        <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
+        <li><a href="index.php?controller=general&action=apropos">A propos de nous</a></li>
+    </ul>
+</nav>
+
+<div id="burger">
+    <img alt="burger" id="imgBurger" src="../assets/burger.png">
+    <ul id="menuBurger">
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index.php?controller=meteo">Météo près de vous</a></li>
+        <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
+        <li><a href="index.php?controller=general&page=apropos">A propos de nous</a></li>
+    </ul>
+</div>
 </header>
 
 <?php
 require File::build_path(array("view", $controller, "$view.php"));;
 ?>
-<footer>
-
-</footer>
 
 </body>
 </html>
