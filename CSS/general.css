@@ -51,7 +51,7 @@ nav {
 
 div {
     display: flex;
-    position: relative;
+    position: static;
     padding-left: 4px;
     align-items: center;
     flex-grow: 1;
@@ -310,6 +310,7 @@ header nav > ul {
     #menuBurger li:hover {
         background-color: #b3bec3;
     }
+
 }
 
 @font-face {
