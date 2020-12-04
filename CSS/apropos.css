@@ -1,47 +1,48 @@
+main{
+    width: 80%;
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.yann {
+.presentation div{
+    width: 90%;
+    height: 45vh;
+}
+.yann{
     background-color: #678900;
 }
-
-.nico {
+.nico{
     background-color: cyan;
 }
-
-.gati {
+.gati{
     background-color: #1ABC9C;
 }
-
 .remi {
     background-color: #1e90ff;
 }
-
 .mela {
     background-color: #ff69b4;
 }
-
 .bast {
     background-color: #F1C40F;
 }
-
 .alex {
-    background-color: #E67E22;
+    background-color: #E67E22 ;
 }
-
 .enzo {
     background-color: #a20000;
 }
 
 .team {
-    display: inline-block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.au {
-    position: absolute;
-    top: 260px;
-    left: 40px;
+.team img{
+    width: 100%;
 }
