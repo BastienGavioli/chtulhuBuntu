@@ -61,7 +61,7 @@
         <li><a href="index.php">Accueil</a></li>
         <li><a href="index.php?controller=meteo&action=read">Météo près de vous</a></li>
         <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
-        <li><a href="index.php?controller=general&page=apropos">A propos de nous</a></li>
+        <li><a href="index.php?controller=general&action=apropos">A propos de nous</a></li>
     </ul>
 </div>
 </header>

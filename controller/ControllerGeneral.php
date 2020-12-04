@@ -9,4 +9,12 @@ public static function readAll() {
         $pagetitle='Acceuil';
         require File::build_path(array("view","view.php"));
     }
+
+    public static function apropos() {
+        $customcss = "apropos";
+        $controller = "general";
+        $view='apropos';
+        $pagetitle='Acceuil';
+        require File::build_path(array("view","view.php"));
+    }
 }
