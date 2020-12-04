@@ -31,7 +31,7 @@ echo '
 <input type="hidden" name="action" value="'. $updated_created .'">
 <input type="hidden" name="type" value="'.$_GET["type"].'">
 <p>
-  <input type="submit" value="Submit" />
+  <input type="submit" value="Envoyer" />
 </p>
 </fieldset>
 </form>

@@ -16,7 +16,7 @@ main {
     flex-direction: column;
     width: fit-content;
     padding: min(5vh,40px) 7vw;
-    margin-top:50px;
+    margin-top:70px;
     background-color: #d0d0d080;
 }
 

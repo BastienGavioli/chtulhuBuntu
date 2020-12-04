@@ -12,7 +12,6 @@
                     <br> [Beaucoup d'imagination implique beaucoup de surchauffe système, ainsi il n'est pas étonnant de le voir s'endormir
                     pour 10min (en réalité 666h)]</div><!--voir rose--><!--666 est un chiffre allié aux illuminati (secte) car
 							il figure dans l'Apocalypse de Saint-Jean-->
-                <div class="remi"><img src="assets/PP/BNCU_bleu.p/>
                 <div class="remi"><img src="/assets/PP/BNCU_bleu.jpg" alt="bleu" width="50px"/> Rémi Espié
                     <br> [Les serveurs sont son domaine de prédiléction, le php sa religion (après celle de notre grand dieu CthulhUbuntu).]</div>
         </div><!--Cthulhu est similaire aux illuminati car il influe sur les populations sans qu'elles le sachent, beaucoup de gens ont dit que cthulhu etait donc un illuminati-->

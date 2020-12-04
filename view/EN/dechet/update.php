@@ -3,27 +3,27 @@ echo '
 <main>
 <form method="get" action="index.php">
 <fieldset>
-		<h3>Dechet trouve</h3>
+		<h3>Waste found</h3>
 			<div>
-			<label for="position"> Localisation (nom de la commune) : </label><br>
+			<label for="position"> Location (name of the nearest city) : </label><br>
 			<input type="text" id="position_id" name="position" required="*" required><br><br>
 		</div>
 		
 		<div>
-			<label for="visuel"> Visibilité/Pollution visuelle sur un niveau de 0 à 5 : </label>
+			<label for="visuel"> Visibility / visual pollution on a scale of 0 to 5 : </label>
 			<input type="number" id="visuel_id" name="visuel" min="0" max="5">
 		</div>
 
 		<div>
-			<label for="quantite"> Quantité de déchets : <br>
+			<label for="quantite"> Quantity of waste : <br>
 			<input type="radio" id="qtte" name="quantite">
-  			<label for="quantite">Moins de 500 cm3</label><br>
+  			<label for="quantite">Less than 500 cm3</label><br>
   			<input type="radio" id="qtte" name="quantite">
- 			<label for="quantite">Environ 500cm3</label><br>
+ 			<label for="quantite">Approximately 500cm3</label><br>
  			<input type="radio" id="qtte" name="quantite">
  			<label for="quantite">666 cm3</label><br>
  			<input type="radio" id="qtte" name="quantite">
- 			<label for="quantite">Sapristi ! C\'est le 7e continent !</label><br><br>
+ 			<label for="quantite">Sacrebleu ! It\'s the 7th continent!</label><br><br>
 		</div>
 
 
