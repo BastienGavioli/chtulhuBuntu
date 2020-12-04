@@ -312,10 +312,10 @@ header nav > ul {
 
 @font-face {
     font-family: Alexana;
-    src: url(../assets/fonts/Alexana.ttf);
+    src: url(/assets/fonts/Alexana.ttf);
 }
 
 @font-face {
     font-family: CRYSISB;
-    src: url(../assets/fonts/CRYSISB.ttf);
+    src: url(/assets/fonts/CRYSISB.ttf);
 }
