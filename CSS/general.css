@@ -3,12 +3,11 @@ body {
     margin: auto;
     font-family: RobotoR, Arial, serif;
     color: black;
-    background-color: #8c969b;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../assets/background.jpg");
+    background-image: url("/assets/background.jpg");
     z-index: 1;
 }
 
@@ -18,6 +17,7 @@ main {
     width: fit-content;
     padding: min(5vh,40px) 7vw;
     margin-top:50px;
+    background-color: #d0d0d050;
 }
 
 main > article {
@@ -86,8 +86,7 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: rgba(50, 125, 95, 0.75);
+    color: black;
 }
 
 a:visited {
@@ -105,7 +104,7 @@ ag:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    position: static;
+    position: sticky;
     bottom: 0;
     left: 0;
     max-height: 10vh;
@@ -341,7 +340,7 @@ header nav > ul {
 
 @font-face {
     font-family: CRYSISB;
-    src: url(../assets/fonts/CRYSISB.ttf);
+    src: url(/assets/fonts/CRYSISB.ttf);
 }
 
 .au {

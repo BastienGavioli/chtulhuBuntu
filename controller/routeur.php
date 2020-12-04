@@ -11,6 +11,13 @@ if (isset($_GET['controller'])){
 else{
     $controller = "ControllerGeneral";
 }
+if(isset($_GET['lang'])){
+    $lang=$_GET['lang'];
+}
+else{
+    $lang='FR';
+}
+
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
 }

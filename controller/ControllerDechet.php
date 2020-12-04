@@ -4,11 +4,17 @@ require File::build_path(array("model","ModelDechet.php"));
 class ControllerDechet
 {
     public static function readAll() {
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $tab = ModelDechet::selectAll();
         $controller = "dechet";
         $view='list';
         $pagetitle='Liste des déchets';
-        require File::build_path(array("view","view.php"));
+        require File::build_path(array("view",$lang,"view.php"));
     }
     /*
     public static function read(){
@@ -21,7 +27,7 @@ class ControllerDechet
             $controller = "dechet";
             $view='detail';
             $pagetitle='Détails du Dechet';
-            require File::build_path(array("view","view.php"));
+            require File::build_path(array("view",$lang,"view.php"));
         }
     }
     */
@@ -29,7 +35,7 @@ class ControllerDechet
         $controller = "dechet";
         $view='error';
         $pagetitle='Erreur de Dechet';
-        require File::build_path(array("view","view.php"));
+        require File::build_path(array("view",$lang,"view.php"));
     }
 
     public static function delete(){
@@ -39,26 +45,38 @@ class ControllerDechet
         $controller = "dechet";
         $view='deleted';
         $pagetitle='Dechet supprimée';
-        require File::build_path(array("view","view.php"));
+        require File::build_path(array("view",$lang,"view.php"));
     }
 
     public static function choixDechet(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $customcss = "dechet";
         $view='choixDechet';
         $controller = "dechet";
         $pagetitle='Choisir un déchet';
-        require File::build_path(array("view","view.php"));
+        require File::build_path(array("view",$lang,"view.php"));
     }
 
 
     public static function create(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $readonly_required="required";
         $updated_created = "created";
         $customcss = "dechet";
         $view='update';
         $controller = "dechet";
         $pagetitle='Ajouter un déchet';
-        require File::build_path(array("view","view.php"));
+        require File::build_path(array("view",$lang,"view.php"));
     }
 
     public static function created(){
@@ -75,12 +93,18 @@ class ControllerDechet
             $view='update';
             $controller = "dechet";
             $pagetitle='Dechet enregistrée !';
-            require File::build_path(array("view","view.php"));
+            require File::build_path(array("view",$lang,"view.php"));
         }
     }
 
 
     public static function update(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $v = ModelDechet::selectByPrimary($_GET['id']);
         $position = $v->getPosition();
         $type = $v->getType();
@@ -91,10 +115,16 @@ class ControllerDechet
         $controller = "dechet";
         $view='update';
         $pagetitle='Editer un Dechet';
-        require File::build_path(array("view","view.php"));
+        require File::build_path(array("view",$lang,"view.php"));
     }
 
     public static function updated(){
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $Dechet1 = new ModelDechet( $_GET["position"], $_GET["type"],$_GET["quantite"], null);
 
         $a = $Dechet1->edit();
@@ -107,7 +137,7 @@ class ControllerDechet
             $view='created';
             $controller = "dechet";
             $pagetitle='Dechet enregistrée';
-            require File::build_path(array("view","view.php"));
+            require File::build_path(array("view",$lang,"view.php"));
         }
 
     }

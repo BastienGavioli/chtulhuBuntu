@@ -3,18 +3,31 @@
 class ControllerGeneral
 {
 
+
 public static function readAll() {
+    if(isset($_GET['lang'])){
+        $lang=$_GET['lang'];
+    }
+    else{
+        $lang='FR';
+    }
         $controller = "general";
         $view='index';
-        $pagetitle='Acceuil';
-        require File::build_path(array("view","view.php"));
+        $pagetitle='Index';
+        require File::build_path(array("view",$lang,"view.php"));
     }
 
     public static function apropos() {
+        if(isset($_GET['lang'])){
+            $lang=$_GET['lang'];
+        }
+        else{
+            $lang='FR';
+        }
         $customcss = "apropos";
         $controller = "general";
         $view='apropos';
-        $pagetitle='Acceuil';
-        require File::build_path(array("view","view.php"));
+        $pagetitle='Index';
+        require File::build_path(array("view",$lang,"view.php"));
     }
 }

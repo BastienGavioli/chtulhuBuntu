@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Temp</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/general.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/index.css">
+    <link rel="icon" href="../../assets/icon.png"/>
+</head>
+
+<body>
+<header>
+
+    <div id="divLogo">
+        <a href="index.html"><img alt="Logo" src="../../assets/icons/jour.png" id="logo"></a>
+
+        <script type="text/javascript">
+            var logo = document.getElementById('logo');
+            var now = new Date();
+            var hour = now.getHours();
+            printTime(hour);
+
+            function printTime(hour){
+                if(hour>=0 && hour<8 || hour>=20 && hour<=23) {
+                    logo.src = "../assets/icons/nuit.png";
+                }
+                else if(hour>=8 && hour<16){
+                    logo.src = "../assets/icons/jour.png";
+                }
+                else if(hour>=16 && hour<20){
+                        logo.src = "../assets/icons/crepuscule.png";
+                }
+            }
+        </script>
+
+    </div>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="autrepage.html">autrepage(temp)</a></li>
+            <li><a href="possiblesousmenu.html">tempsousmenu</a>
+                <ul class="sousMenuNR">
+                    <li><a href="1.html">1</a></li>
+                    <li><a href="2.html">2</a></li>
+                    <li><a href="3.html">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="burger">
+        <img alt="burger" id="imgBurger" src="../../assets/burger.png">
+        <ul id="menuBurger">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="autrepage.html">autrepage(temp)</a></li>
+            <li><a href="possiblesousmenu.html">tempsousmenu</a>
+                <ul class="sousMenuNR">
+                    <li><a href="1.html">1</a></li>
+                    <li><a href="2.html">2</a></li>
+                    <li><a href="3.html">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <h2>Super site super bien réalisé</h2>
+    <div><p>Le premier déchet découvert par un surfeur date du 1 Mai 1776.
+        Chaque année, ce sont 141965456X déchets qui sont retrouvés dans l'océan et sur les rives.
+Afin de changer cela, nous avons décidé de vous donner le pouvoir de faire avancer les choses au travers de ce site.
+Vous pourrez désormais signaler les petites et grosses quantités de déchets que vous observerez lors de vos séances surf !
+Pour cela, il vous suffira de vous rendre sur la page dédiée (<a href="view/dechetTrouve.html">ici</a>), et de faire votre signalement en remplissant un formulaire !
+Si vous souhaitez ne rien manquer de l'actualité, si vous êtes intéressé par l'écologie, l'addoration de notre dieu CthulhUbuntu ou bien
+simplement parce que vous avez souvent l'occasion d'appercevoir des déchets lors de vos sorties surf, vous pouvez utiliser l'option d'inscription
+sur la page de signalement précédemment mentionnée !
+Afin de vous préparer au mieux à sortir, notre page météo (<a href="">ici</a>) est faite pour vous ! 
+Pensée afin de vous facilité la vie, elle vous permettra de ne pas sortir par mauvais temps ou bien de prévoir assez de crème solaire par temps très chaud !
+
+        <a href="https://www.nationilluminati.com/">Notre partenaire principal</a>
+    </p></div>
+    <div>
+      <img src="../../assets/crewmates/red.png" alt="red" id="red" class="au" onclick="document.getElementById('red').src='../assets/crewmates/red-dead.png'">
+    </div>
+
+    </div>
+</main>
+
+<footer>
+  <a href="index_en.html">Anglais</a>
+</footer>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <title><?php echo $pagetitle; ?></title>
 
@@ -23,7 +23,7 @@
 <body>
 <header>
     <div id="divLogo">
-        <img alt="Logo" src="../assets/icons/jour.png" id="logo">
+        <img alt="Logo" src="../../assets/icons/jour.png" id="logo">
         <!DOCTYPE html>
         <html>
         <body>
@@ -56,7 +56,7 @@
 </nav>
 
 <div id="burger">
-    <img alt="burger" id="imgBurger" src="../assets/burger.png">
+    <img alt="burger" id="imgBurger" src="../../assets/burger.png">
     <ul id="menuBurger">
         <li><a href="index.php">Accueil</a></li>
         <li><a href="index.php?controller=meteo&action=read">Météo près de vous</a></li>
@@ -69,6 +69,21 @@
 <?php
 require File::build_path(array("view", $controller, "$view.php"));;
 ?>
+
+<footer>
+    <?php if(isset($_GET['lang'])){
+        if($_GET['lang']!='FR'){
+            echo "<a href='index.php?lang=FR'>French</a>";
+        }
+        else{
+            echo "<a href='index.php?lang=EN'>Anglais</a>";
+        }
+    }
+    else{
+        echo "<a href='index.php?lang=EN'>Anglais</a>";
+    }
+    ?>
+</footer>
 
 </body>
 </html>

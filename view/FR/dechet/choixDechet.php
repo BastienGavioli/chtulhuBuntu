@@ -15,7 +15,7 @@
             <p>
                 Pneux et autres mathières caoutchouteuses 
             </p>
-            <a href="index.php?controller=dechet&action=create&type=caoutchou"><img src="https://media.discordapp.net/attachments/784098613282209813/784099130858799164/Dechet-pneu.png" alt="pneu" width="300px"> </a><!--Image de pneu-->
+            <a href="index.php?controller=dechet&action=create&type=caoutchou"><img src="https://media.discordapp.net/attachments/784098613282209813/784227066518175754/papajojo.jpg" alt="pneu" width="300px"> </a><!--Image de pneu-->
         </div >
         <div class="droite">
             <p>
