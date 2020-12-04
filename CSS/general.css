@@ -86,8 +86,7 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: rgba(50, 125, 95, 0.75);
+    color: black;
 }
 
 a:visited {

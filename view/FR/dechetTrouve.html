@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Temp</title>
+	<link rel="stylesheet" type="text/css" href="../../CSS/general.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/dechet.css">
+	<link rel="icon" href="../../assets/icon.png"/>
+</head>
+<body>
+	<header></header>
+
+		
+		<fieldset>
+		<h3>Dechet trouve</h3>
+			<div>
+			<label for="place"> Localisation (nom de la commune) : </label><br>
+			<input type="text" id="lieu" name="place" required="*" required><br><br>
+		</div>
+
+		<div>
+			<label for="day"> Jour de la découverte : </label><br>
+			<input type="date" id="jour" name="day"><br><br>
+		</div>
+		
+		<div>
+			<label for="time"> Heure de la découverte : </label><br>
+			<input type="time" id="heure" name="time"><br><br>
+		</div>
+
+		<div>
+			<label for="vsblty"> Visibilité/Pollution visuelle sur un niveau de 0 à 5 : </label>
+			<input type="number" id="pollution" name="vsblty" min="0" max="5">
+		</div>
+
+		<div>
+			<label for="qtty"> Quantité de déchets : <br>
+			<input type="radio" id="qtte" name="qtty">
+  			<label for="qtty">Moins de 500 cm3</label><br>
+  			<input type="radio" id="qtte" name="qtty">
+ 			<label for="qtty">Environ 500cm3</label><br>
+ 			<input type="radio" id="qtte" name="qtty">
+ 			<label for="qtty">666 cm3</label><br>
+ 			<input type="radio" id="qtte" name="qtty">
+ 			<label for="qtty">Sapristi ! C'est le 7e continent !</label><br><br>
+		</div>
+			<img src="../../assets/crewmates/pink.png" alt="pink" id="pink" class="au" onclick="document.getElementById('pink').src='../assets/crewmates/pink-dead.png'">
+		<div>
+		<input type="submit" value="Envoyer">
+		</div>
+	</fieldset>
+</body>
+</html>
