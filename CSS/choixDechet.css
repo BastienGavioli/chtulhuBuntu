@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 71);
+    font-size: 200%;
+}
+
+div{
+    align-items: center;
+}
+div.gauche{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(0, 0, 71);
+}
+
+
+div.droite{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    background-color: rgb(1, 1, 151);
+
+}
+
+div p{
+    flex-grow: 2;
+    text-align: center;
+    margin: 0px 0px;
+    align-items: baseline;
+    position: relative;
+    top: 50%;
+
+}
