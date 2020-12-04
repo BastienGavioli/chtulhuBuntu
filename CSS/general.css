@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url("../assets/background.jpg");
+    z-index: 1;
 }
 
 main {
@@ -71,12 +72,14 @@ h2 {
     font-family: "Arial", "sans-serif";
     border: 4px solid rgb(22, 53, 62);
     border-radius: 25px;
+    background-color: #8c969b;
 }
 
 p {
     margin: 0 30px;
     font-family: "CRYSISB", courier, monospace;
     font-size: 150%;
+    z-index: 1;
 }
 
 a {
@@ -217,6 +220,7 @@ header nav > ul {
         -webkit-transition: transform 1s ease-in-out;
         transition: transform 1s ease-in-out;
         transform: translateX(100%);
+        z-index: 3;
     }
 
     #burger {
