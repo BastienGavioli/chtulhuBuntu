@@ -1,6 +1,17 @@
+main{
+    width: 80%;
+}
+
 .presentation {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.presentation div{
+    width: 90%;
+    height: 45vh;
 }
 .yann{
     background-color: #678900;
@@ -28,5 +39,10 @@
 }
 
 .team {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+.team img{
+    width: 100%;
 }
