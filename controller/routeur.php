@@ -3,6 +3,7 @@
 
 require File::build_path(array('controller', 'ControllerGeneral.php'));
 require File::build_path(array('controller', 'ControllerDechet.php'));
+require File::build_path(array('controller', 'ControllerMeteo.php'));
 
 if (isset($_GET['controller'])){
     $controller = "Controller" . ucfirst($_GET['controller']);

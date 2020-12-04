@@ -49,7 +49,7 @@
         <nav>
     <ul id="menu">
         <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?controller=meteo">Météo près de vous</a></li>
+        <li><a href="index.php?controller=meteo&action=read">Météo près de vous</a></li>
         <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
         <li><a href="index.php?controller=general&action=apropos">A propos de nous</a></li>
     </ul>
@@ -59,7 +59,7 @@
     <img alt="burger" id="imgBurger" src="../assets/burger.png">
     <ul id="menuBurger">
         <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?controller=meteo">Météo près de vous</a></li>
+        <li><a href="index.php?controller=meteo&action=read">Météo près de vous</a></li>
         <li><a href="index.php?controller=dechet&action=choixDechet">Ajouter un déchet</a></li>
         <li><a href="index.php?controller=general&page=apropos">A propos de nous</a></li>
     </ul>
