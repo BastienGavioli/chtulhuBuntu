@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("../assets/background.jpg");
 }
 
 main {
@@ -15,7 +16,6 @@ main {
     flex-direction: column;
     width: fit-content;
     padding: min(5vh,40px) 7vw;
-    background-color: rgba(131, 90, 119, 0.5);
     margin-top:50px;
 }
 
