@@ -1,4 +1,4 @@
-<html>
+<html lang="fr">
 
 <p id="demo1"></p><img alt="temp" src="../../assets/temperature/medium.png" id='itemp'"/>
 <p id="demo2"></p>
