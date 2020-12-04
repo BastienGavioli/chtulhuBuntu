@@ -52,9 +52,6 @@ class ControllerDechet
 
 
     public static function create(){
-        $idDechet="";
-        $position="";
-        $quantite="";
         $readonly_required="required";
         $updated_created = "created";
         $customcss = "dechet";
@@ -65,7 +62,9 @@ class ControllerDechet
     }
 
     public static function created(){
-        $Dechet1 = new ModelDechet( $_GET["position"], $_GET["type"],$_GET["quantite"], null);
+        $Dechet1 = new ModelDechet(null, $_GET["position"], $_GET["type"],$_GET["quantite"], $_GET["visuel"]);
+
+        var_dump($Dechet1);
 
         $a = $Dechet1->save();
 
@@ -73,10 +72,9 @@ class ControllerDechet
             echo htmlspecialchars("Un Dechet avec ce idDechet existe déjà dans la base de donnée.");
         }
         else{
-            $tab = ModelDechet::selectAll();
-            $view='created';
+            $view='update';
             $controller = "dechet";
-            $pagetitle='Dechet enregistrée';
+            $pagetitle='Dechet enregistrée !';
             require File::build_path(array("view","view.php"));
         }
     }
