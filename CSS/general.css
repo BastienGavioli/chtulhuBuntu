@@ -45,6 +45,7 @@ header {
     font-size: 100%;
 }
 
+
 nav {
     font-weight: bold;
     height: 50px;
@@ -200,7 +201,9 @@ header nav > ul {
         min-height: 30px;
         width: 100%;
         min-width: 257px;
+        background: none;
     }
+
 
     header > #divLogo {
         justify-content: center;
@@ -251,7 +254,7 @@ header nav > ul {
     }
 
     #menuBurger, #menuBurger ul {
-        padding: 0;
+        padding: 15px 0px 0px 0px;
         margin: 0;
         list-style: none;
         text-align: center;
