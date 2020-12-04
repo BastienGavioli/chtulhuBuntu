@@ -1,8 +1,12 @@
 <main>
-
-<p id="tempImage"></p><img alt="temp" src="/assets/temperature/medium.png" style="width: 100px;" id='itemp'>
-<p id="temp"></p>
-    <p id="wind"></p>
+    <div>
+        <div><img alt="temp" src="/assets/temperature/medium.png" style="width: 100px;" id='itemp'></div>
+        <div style="flex-direction: column; align-items: unset;">
+            <p id="tempImage"></p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+        </div>
+    </div>
 <img src="/assets/crewmates/brown.png" alt="brown" id="brown" class="au" onclick="document.getElementById('brown').src='/assets/crewmates/brown-dead.png'" style="width: 50px;">
 
     <script>
