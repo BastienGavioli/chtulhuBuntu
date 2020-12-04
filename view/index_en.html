@@ -10,12 +10,70 @@
 <body>
 <header>
 
+    <div id="divLogo">
+        <img alt="Logo" src="../assets/icons/jour.png" id="logo">
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <script type="text/javascript">
+            var logo = document.getElementById('logo');
+            var now = new Date();
+            var hour = now.getHours();
+            printTime(hour);
+
+            function printTime(hour){
+                if(hour>=0 && hour<8 || hour>=20 && hour<=23) {
+                    logo.src = "../assets/icons/nuit.png";
+                }
+                else if(hour>=8 && hour<16){
+                    logo.src = "../assets/icons/jour.png";
+                }
+                else if(hour>=16 && hour<20){
+                    logo.src = "../assets/icons/crepuscule.png";
+                }
+            }
+        </script>
+
+        </body>
+        </html>
+
+    </div>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="autrepage.html">anotherPages(temp)</a></li>
+            <li><a href="possiblesousmenu.html">tempsubmenu</a>
+                <ul class="sousMenuNR">
+                    <li><a href="1.html">1</a></li>
+                    <li><a href="2.html">2</a></li>
+                    <li><a href="3.html">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="burger">
+        <img alt="burger" id="imgBurger" src="../assets/burger.png">
+        <ul id="menuBurger">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="autrepage.html">anotherPages(temp)</a></li>
+            <li><a href="possiblesousmenu.html">tempsubmenu</a>
+                <ul class="subMenuNR">
+                    <li><a href="1.html">1</a></li>
+                    <li><a href="2.html">2</a></li>
+                    <li><a href="3.html">3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </header>
 
 <main>
+    <h2>Great website really well made</h2>
     <div><p>The first junk founded by a surfer date back to first May 1776
+        <img src="../assets/gwapprove.png" alt="gwapprove" id="gwapprove"><br>
         <a href="https://www.nationilluminati.com/">Our main sponsor</a>
-        <img href="images/georgewashingtondesaprouve.png" alt="georgelesang">
     </p></div>
 </main>
 
