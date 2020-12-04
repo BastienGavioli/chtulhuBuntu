@@ -316,3 +316,7 @@ header nav > ul {
     font-family: CRYSISB;
     src: url(../assets/fonts/CRYSISB.ttf);
 }
+
+.au {
+    width: 50px;
+}
