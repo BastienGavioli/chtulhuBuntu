@@ -25,7 +25,7 @@
                 <br> [His impressive graphic designer skills alowed him to create 6 logos for 6 hours, which is 6! (Pun on "sick", I tried my best)]</div>
     </div>
         </div>
-        <div class="team"><h3>Notre merveilleuse équipe est soudée même en distanciel ! </h3>
+        <div class="team"><h3>Our wonderful team is united even at a distance!</h3>
             <br><br><img src="/assets/team.jpg" alt="team" width="300px"/></div>
     </div>
     <img src="/assets/crewmates/orange.png" alt="orange" id="orange" class="au" onclick="document.getElementById('orange').src='/assets/crewmates/orange-dead.png'">
